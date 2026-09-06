@@ -183,7 +183,7 @@ export default function HomePage() {
         <h1 className="text-center">Visit my other Websites</h1>
         <div className="flex flex-col items-center justify-center gap-5">
           <a
-          className="text-don-txt no-underline" href="/don" title="Donate to me.">
+          className="text-don-txt no-underline" href="https://donation.free-time.me" title="Donate to me.">
             <h2>
               Donate to me.
             </h2>
