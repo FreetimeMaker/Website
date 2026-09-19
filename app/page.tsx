@@ -213,7 +213,12 @@ export default function HomePage() {
                 Submit your own Android App to Luma Store.
             </h2>
           </a>
-        </div>
+ 
+          <a className="text-docs-txt no-underline" href="https://docs.free-time.me" title="Read the documentation for my projects." target="_blank" rel="noopener noreferrer">
+            <h2>
+                Read the documentation for my projects.
+            </h2>
+          </a>       </div>
 
         <footer className="mt-[25px] text-center">&copy;  2026 FreetimeMaker</footer>
       </div>
