@@ -12,73 +12,77 @@
 
 :root {
   --bg: linear-gradient(90deg, rgba(255, 158, 158, 1) 0%, rgba(143, 255, 156, 1) 100%);
-  --text: white;
+  --text: #172033;
   --img-bg: rgba(255, 255, 255, 0.4);
-  --gw-txt: rgba(96, 12, 141, 0.8);
-  --ssmpc-txt: rgba(208, 127, 71, 0.8);
-  --fsdk-txt: rgba(0, 128, 0, 0.8);
+  --gw-txt: #4c1d95;
+  --ssmpc-txt: #7c2d12;
+  --fsdk-txt: #14532d;
   --button-bg: #111111;
   --button-text: #eeeeee;
-  --don-txt: rgba(255, 0, 0, 0.8);
-  --geoweather-next-txt: rgba(0, 157, 255, 0.8);
-  --dashboard-txt: rgba(255, 255, 0, 0.8);
-  --fdroid-repo-txt: rgba(96, 255, 71, 0.8);
-  --blog-txt: rgba(0, 255, 0, 0.8);
-  --luma-store-txt: rgba(255, 0, 255, 0.8);
+  --don-txt: #991b1b;
+  --geoweather-next-txt: #075985;
+  --dashboard-txt: #713f12;
+  --fdroid-repo-txt: #166534;
+  --blog-txt: #166534;
+  --luma-store-txt: #86198f;
+  --docs-txt: #1e40af;
 }
 
 html.dark {
   --bg: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-  --text: black;
+  --text: #f8fafc;
   --img-bg: rgba(0, 0, 0, 0.4);
-  --gw-txt: rgba(12, 141, 89, 0.8);
-  --ssmpc-txt: rgb(255, 0, 0);
-  --fsdk-txt: rgb(0, 30, 255);
+  --gw-txt: #6ee7b7;
+  --ssmpc-txt: #fca5a5;
+  --fsdk-txt: #93c5fd;
   --button-bg: #eeeeee;
   --button-text: #111111;
-  --don-txt: rgb(95 0 0 / 0.8);
-  --geoweather-next-txt: rgb(61 156 0 / 0.8);
-  --dashboard-txt: rgba(255, 0, 255, 0.8);
-  --fdroid-repo-txt: rgba(71, 255, 96, 0.8);
-  --blog-txt: rgba(0, 255, 255);
-  --luma-store-txt: rgba(0, 255, 0, 0.8);
+  --don-txt: #fecaca;
+  --geoweather-next-txt: #bef264;
+  --dashboard-txt: #f0abfc;
+  --fdroid-repo-txt: #86efac;
+  --blog-txt: #67e8f9;
+  --luma-store-txt: #86efac;
+    --docs-txt: #bfdbfe;
 }
 
 /* Ladezustand vor Hydration: respektiere Systempräferenz, um Falsches Aufblitzen zu vermeiden */
 @media (prefers-color-scheme: dark) {
   :root:not(.light) {
     --bg: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    --text: black;
+    --text: #f8fafc;
     --img-bg: rgba(0, 0, 0, 0.4);
-    --gw-txt: rgba(12, 141, 89, 0.8);
-    --ssmpc-txt: rgb(255, 0, 0);
-    --fsdk-txt: rgb(0, 30, 255);
+    --gw-txt: #6ee7b7;
+    --ssmpc-txt: #fca5a5;
+    --fsdk-txt: #93c5fd;
     --button-bg: #eeeeee;
     --button-text: #111111;
-    --don-txt: rgb(95 0 0 / 0.8);
-    --geoweather-next-txt: rgb(61 156 0 / 0.8);
-    --dashboard-txt: rgba(255, 0, 255, 0.8);
-    --fdroid-repo-txt: rgba(71, 255, 96, 0.8);
-    --blog-txt: rgba(0, 255, 255);
-  --luma-store-txt: rgba(0, 255, 0, 0.8);
+    --don-txt: #fecaca;
+    --geoweather-next-txt: #bef264;
+    --dashboard-txt: #f0abfc;
+    --fdroid-repo-txt: #86efac;
+    --blog-txt: #67e8f9;
+  --luma-store-txt: #86efac;
+    --docs-txt: #bfdbfe;
   }
 }
 
 html.light {
   --bg: linear-gradient(90deg, rgba(255, 158, 158, 1) 0%, rgba(143, 255, 156, 1) 100%);
-  --text: white;
+  --text: #172033;
   --img-bg: rgba(255, 255, 255, 0.4);
-  --gw-txt: rgba(96, 12, 141, 0.8);
-  --ssmpc-txt: rgba(208, 127, 71, 0.8);
-  --fsdk-txt: rgba(0, 128, 0, 0.8);
+  --gw-txt: #4c1d95;
+  --ssmpc-txt: #7c2d12;
+  --fsdk-txt: #14532d;
   --button-bg: #111111;
   --button-text: #eeeeee;
-  --don-txt: rgba(255, 0, 0, 0.8);
-  --geoweather-next-txt: rgba(0, 157, 255, 0.8);
-  --dashboard-txt: rgba(255, 255, 0, 0.8);
-  --fdroid-repo-txt: rgba(96, 255, 71, 0.8);
-  --blog-txt: rgba(0, 255, 0, 0.8);
-  --luma-store-txt: rgba(255, 0, 255, 0.8);
+  --don-txt: #991b1b;
+  --geoweather-next-txt: #075985;
+  --dashboard-txt: #713f12;
+  --fdroid-repo-txt: #166534;
+  --blog-txt: #166534;
+  --luma-store-txt: #86198f;
+  --docs-txt: #1e40af;
 }
 
 @theme inline {
@@ -96,6 +100,7 @@ html.light {
   --color-fdroid-repo-txt: var(--fdroid-repo-txt);
   --color-blog-txt: var(--blog-txt);
   --color-luma-store-txt: var(--luma-store-txt);
+  --color-docs-txt: var(--docs-txt);
 }
 
 body {
