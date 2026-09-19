@@ -71,6 +71,22 @@ const ssmpcPics = [
   { src: "/images/ssmpcaction3.png", alt: "Third Picture of SuperSMP Companion in Action", label: "SuperSMP Mappage" },
 ];
 
+const lumaStorePics = [
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Android/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png", alt: "Luma Store app screenshot showing the first main app view", label: "Luma Store – App browsing" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Android/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png", alt: "Luma Store app screenshot showing another store view", label: "Luma Store – Discover apps" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Android/master/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png", alt: "Luma Store app screenshot showing app information", label: "Luma Store – App details" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Android/master/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png", alt: "Luma Store app screenshot showing app management features", label: "Luma Store – App management" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Android/master/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png", alt: "Luma Store app screenshot showing an additional application screen", label: "Luma Store – Additional features" },
+];
+
+const dualistPics = [
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png", alt: "Dualist screenshot showing the task overview", label: "Dualist – Task overview" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png", alt: "Dualist screenshot showing task organization", label: "Dualist – Organize tasks" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png", alt: "Dualist screenshot showing task details", label: "Dualist – Task details" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png", alt: "Dualist screenshot showing another task management view", label: "Dualist – Manage tasks" },
+  { src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png", alt: "Dualist screenshot showing an additional application screen", label: "Dualist – Additional features" },
+];
+
 export default function HomePage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -145,6 +161,32 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-center gap-5 max-md:flex-col md:items-start">
             {ssmpcPics.map((p) => (
               <HoverCard key={p.label} {...p} size={250} variant="ssmpc" />
+            ))}
+          </div>
+        </div>
+
+        {/* Luma Store in Action */}
+        <div className="anim-image-appear flex flex-col items-center">
+          <h1 className="my-10 text-center">Here you can see Luma Store in Action.</h1>
+          <p className="max-w-3xl px-4 text-center">
+            Luma Store is an Android app store that lets you browse apps from supported sources, inspect app details and manage apps from one place.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-5 max-md:flex-col md:items-start">
+            {lumaStorePics.map((pic) => (
+              <HoverCard key={pic.label} {...pic} size={250} variant="ssmpc" />
+            ))}
+          </div>
+        </div>
+
+        {/* Dualist in Action */}
+        <div className="anim-image-appear flex flex-col items-center">
+          <h1 className="my-10 text-center">Here you can see Dualist in Action.</h1>
+          <p className="max-w-3xl px-4 text-center">
+            Dualist is a task management app for organizing and keeping track of tasks in a simple Android interface.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-5 max-md:flex-col md:items-start">
+            {dualistPics.map((pic) => (
+              <HoverCard key={pic.label} {...pic} size={250} variant="ssmpc" />
             ))}
           </div>
         </div>
