@@ -52,7 +52,7 @@ const projects = [
     label: "Luma Store",
   },
   {
-    src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/icon.png",
+    src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
     alt: "Dualist Logo",
     label: "Dualist",
   },
@@ -148,7 +148,7 @@ export default function HomePage() {
         {/* GeoWeather in Action */}
         <div className="anim-image-appear flex flex-col items-center">
           <h1 className="my-10 text-center">Here you can see GeoWeather in Action.</h1>
-          <div className="flex flex-wrap items-center justify-center gap-5 max-md:flex-col md:items-start">
+          <div className="flex w-full flex-nowrap items-start justify-center gap-5 overflow-x-auto px-4">
             {geoWeatherPics.map((p) => (
               <HoverCard key={p.label} {...p} size={200} variant="geow" />
             ))}
@@ -158,7 +158,7 @@ export default function HomePage() {
         {/* SuperSMP Companion in Action */}
         <div className="anim-image-appear flex flex-col items-center">
           <h1 className="my-10 text-center">Here you can see SuperSMP Companion in Action.</h1>
-          <div className="flex flex-wrap items-center justify-center gap-5 max-md:flex-col md:items-start">
+          <div className="flex w-full flex-nowrap items-start justify-center gap-5 overflow-x-auto px-4">
             {ssmpcPics.map((p) => (
               <HoverCard key={p.label} {...p} size={250} variant="ssmpc" />
             ))}
@@ -171,7 +171,7 @@ export default function HomePage() {
           <p className="max-w-3xl px-4 text-center">
             Luma Store is an Android app store that lets you browse apps from supported sources, inspect app details and manage apps from one place.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-5 max-md:flex-col md:items-start">
+          <div className="flex w-full flex-nowrap items-start justify-center gap-5 overflow-x-auto px-4">
             {lumaStorePics.map((pic) => (
               <HoverCard key={pic.label} {...pic} size={250} variant="ssmpc" />
             ))}
@@ -184,7 +184,7 @@ export default function HomePage() {
           <p className="max-w-3xl px-4 text-center">
             Dualist is a task management app for organizing and keeping track of tasks in a simple Android interface.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-5 max-md:flex-col md:items-start">
+          <div className="flex w-full flex-nowrap items-start justify-center gap-5 overflow-x-auto px-4">
             {dualistPics.map((pic) => (
               <HoverCard key={pic.label} {...pic} size={250} variant="ssmpc" />
             ))}
