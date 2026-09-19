@@ -46,6 +46,16 @@ const projects = [
   { src: "/images/geoweather.png", alt: "GeoWeather Logo", label: "GeoWeather" },
   { src: "/images/ssmpc.png", alt: "SuperSMP Companion Logo", label: "SuperSMP Companion" },
   { src: "/images/freetimesdk.png", alt: "FreetimeSDK Logo", label: "FreetimeSDK" },
+  {
+    src: "https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Android/master/app/src/main/ic_launcher-playstore.png",
+    alt: "Luma Store Logo",
+    label: "Luma Store",
+  },
+  {
+    src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/icon.png",
+    alt: "Dualist Logo",
+    label: "Dualist",
+  },
 ];
 
 const geoWeatherPics = [
