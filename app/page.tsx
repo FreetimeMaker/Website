@@ -260,9 +260,9 @@ export default function HomePage() {
                 Visit and read my Blogs.
             </h2>
           </a>
-          <a className="text-luma-store-txt no-underline" href="https://luma.free-time.me" title="Submit your own Android App to Luma Store." target="_blank">
+          <a className="text-luma-store-txt no-underline" href="https://luma.free-time.me" title="Submit your own App to Luma Store." target="_blank">
             <h2>
-                Submit your own Android App to Luma Store.
+                Submit your own App to Luma Store.
             </h2>
           </a>
  
