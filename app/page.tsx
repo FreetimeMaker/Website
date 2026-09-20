@@ -52,7 +52,7 @@ const projects = [
     label: "Luma Store",
   },
   {
-    src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+    src: "https://raw.githubusercontent.com/FreetimeMaker/Dualist/master/fastlane/metadata/android/en-US/images/icon.png",
     alt: "Dualist Logo",
     label: "Dualist",
   },
