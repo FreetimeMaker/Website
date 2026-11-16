@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Freetime Maker — a developer creating Web and Android apps and open-source projects like GeoWeather, SuperSMP Companion and FreetimeSDK.",
   applicationName: "Freetime Maker Portfolio",
-  authors: [{ name: "Freetime Maker", url: "https://github.com/FreetimeMaker" }],
+  authors: [
+    { name: "Freetime Maker", url: "https://github.com/FreetimeMaker" },
+  ],
   creator: "Freetime Maker",
   publisher: "Freetime Maker",
   generator: "Next.js",
@@ -78,8 +80,16 @@ export const metadata: Metadata = {
       { url: "/Icons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/Icons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/Icons/favicon.ico", type: "image/x-icon" },
-      { url: "/Icons/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-      { url: "/Icons/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+      {
+        url: "/Icons/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        url: "/Icons/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
     ],
     apple: "/Icons/apple-touch-icon.png",
   },
@@ -88,20 +98,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="de"
-      className="h-full antialiased"
-      suppressHydrationWarning
-    >
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
       <body className="min-h-full">
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var s=localStorage.getItem('theme');var d=s?s==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.classList.add(d?'dark':'light');}catch(e){}})()`,
           }}
         />
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
