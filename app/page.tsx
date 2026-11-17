@@ -102,9 +102,13 @@ export default function HomePage() {
       </a>
       <header className="site-header shell">
         <a className="wordmark" href="#" aria-label="Freetime Maker home">
-          <span className="brand-icon">
-            fm<span>.</span>
-          </span>{" "}
+          <Image
+            className="brand-icon"
+            src="/images/logo.png"
+            alt=""
+            width={44}
+            height={44}
+          />
           <span>Freetime Maker</span>
         </a>
         <nav aria-label="Main navigation">
@@ -149,9 +153,13 @@ export default function HomePage() {
           </div>
           <aside className="developer-panel" aria-label="Development focus">
             <div className="panel-header">
-              <span className="panel-mark" aria-hidden="true">
-                fm.
-              </span>
+              <Image
+                className="panel-mark"
+                src="/images/logo.png"
+                alt=""
+                width={40}
+                height={40}
+              />
               <span>INDEPENDENT DEVELOPER</span>
             </div>
             <p className="panel-title">
@@ -372,7 +380,8 @@ export default function HomePage() {
           Freetime Maker<span className="accent">.</span>
         </a>
         <span>
-          © {new Date().getFullYear()} · Freetime Maker. Licensed under the GPL-v3.0 · Built with purpose.
+          © {new Date().getFullYear()} · Freetime Maker. Licensed under the
+          GPL-v3.0 · Built with purpose.
         </span>
         <a
           href="https://donation.free-time.me"
