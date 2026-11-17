@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     "open source",
     "GeoWeather",
     "SuperSMP Companion",
-    "FreetimeSDK",
     "Java",
     "Kotlin",
     "HTML",
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
     siteName: "Freetime Maker",
     title: "My Portfolio | Freetime Maker",
     description:
-      "Portfolio of Freetime Maker — Web and Android developer behind GeoWeather, SuperSMP Companion and FreetimeSDK.",
+      "Portfolio of Freetime Maker — Web and Android developer behind GeoWeather and SuperSMP Companion.",
     images: [
       {
         url: "/app/public/images/geoweather.png",
@@ -69,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "My Portfolio | Freetime Maker",
     description:
-      "Portfolio of Freetime Maker — Web and Android developer behind GeoWeather, SuperSMP Companion and FreetimeSDK.",
+      "Portfolio of Freetime Maker — Web and Android developer behind GeoWeather and SuperSMP Companion.",
     images: ["/images/geoweather.png"],
   },
   verification: {

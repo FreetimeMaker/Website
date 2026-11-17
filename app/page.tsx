@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 const projects = [
   {
     name: "GeoWeather",
-    category: "Weather · Android & Web",
+    category: "Weather · Android",
     description:
-      "A weather application with location search, weather information, and a companion web experience.",
+      "A weather application with location search and weather information",
     image: "/images/geoweather.png",
     screenshot: "/images/geoweatheraction1.png",
     href: "https://github.com/FreetimeMaker/GeoWeather",
@@ -78,11 +78,6 @@ const links = [
     "Documentation",
     "Guides and project resources",
     "https://docs.free-time.me",
-  ],
-  [
-    "Dashboard",
-    "A central hub for my web tools",
-    "https://dashboard.free-time.me",
   ],
 ];
 
