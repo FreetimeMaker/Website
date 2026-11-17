@@ -203,7 +203,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p>
-              A selection of Android apps, web projects,
+              A selection of Android apps
               <br />
               and open-source developer tools.
             </p>
@@ -372,7 +372,7 @@ export default function HomePage() {
           Freetime Maker<span className="accent">.</span>
         </a>
         <span>
-          © {new Date().getFullYear()} · Freetime Maker. Built with purpose.
+          © {new Date().getFullYear()} · Freetime Maker. Licensed under the GPL-v3.0 · Built with purpose.
         </span>
         <a
           href="https://donation.free-time.me"
