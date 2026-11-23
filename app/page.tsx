@@ -384,7 +384,7 @@ export default function HomePage() {
             <br />
             <span>Let’s talk.</span>
           </h2>
-          <a className="button primary" href="mailto:FreetimeMaker@proton.me">
+          <a className="button primary" href="mailto:FreetimeMaker@proton.me" target="_blank">
             Send me an email <span aria-hidden="true">↗</span>
           </a>
           <p>
@@ -402,7 +402,7 @@ export default function HomePage() {
       </main>
       <footer className="site-footer shell">
         <a className="wordmark" href="#">
-          Freetime Maker<span className="accent">.</span>
+          Freetime Maker
         </a>
         <span>
           © {new Date().getFullYear()} · Freetime Maker. Licensed under the
