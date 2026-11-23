@@ -13,7 +13,7 @@ The portfolio brings together selected projects, the languages and tools I work 
 - **Resources** — access to Luma Store, my F-Droid repository, blog, documentation, and dashboard.
 - **Contact** — direct links to email and GitHub.
 
-The site features a responsive layout, light and dark themes, keyboard focus indicators, a skip-to-content link, and reduced-motion support. Search metadata, structured person data, a sitemap, and robots directives are included.
+The site uses a Material 3 Expressive-inspired design with tonal surfaces, rounded cards, pill-shaped controls, and subtle shape transitions. It features a responsive layout, light and dark themes, keyboard focus indicators, a skip-to-content link, and reduced-motion support. Search metadata, structured person data, a sitemap, and robots directives are included.
 
 ## Featured projects
 
@@ -86,7 +86,7 @@ public/
 ## Updating the portfolio
 
 - **Content and projects:** edit `app/page.tsx`. The `projects`, `technologies`, and `links` arrays define the main collections.
-- **Visual design:** edit `app/globals.css`. CSS variables in `:root` and `html.dark` control the light and dark palettes.
+- **Visual design:** edit `app/globals.css`. The `--md-sys-color-*` tokens in `:root` and `html.dark` define paired container and content colors for each theme. Shape and motion tokens control card radii and transition easing.
 - **Images:** add assets to `public/images/` and reference them with `/images/your-file.png`.
 - **Metadata and branding:** update `app/layout.tsx` and the page metadata in `app/page.tsx`.
 - **Domain changes:** review `CNAME`, metadata URLs, structured data, `app/sitemap.ts`, and `app/robots.ts` together.

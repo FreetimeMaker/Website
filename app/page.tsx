@@ -69,9 +69,9 @@ const links = [
     "https://luma.free-time.me",
   ],
   [
-    "F-Droid Repository",
-    "Download Android applications",
-    "https://fdroid.free-time.me",
+    "Repositories",
+    "Use my F-Droid, APT, YUM or Maven Repository",
+    "https://repo.free-time.me",
   ],
   ["Blog", "Development notes and updates", "https://blog.free-time.me"],
   [
@@ -80,6 +80,29 @@ const links = [
     "https://docs.free-time.me",
   ],
 ];
+
+function ExpressiveFlower({ className }: { className: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 200 200"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+    >
+      {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
+        <ellipse
+          key={angle}
+          cx="100"
+          cy="58"
+          rx="30"
+          ry="56"
+          transform={`rotate(${angle} 100 100)`}
+        />
+      ))}
+    </svg>
+  );
+}
 
 export default function HomePage() {
   return (
@@ -152,6 +175,7 @@ export default function HomePage() {
             </div>
           </div>
           <aside className="developer-panel" aria-label="Development focus">
+            <ExpressiveFlower className="panel-flower" />
             <div className="panel-header">
               <Image
                 className="panel-mark"
@@ -353,6 +377,7 @@ export default function HomePage() {
           </div>
         </section>
         <section className="contact-section shell" id="contact">
+          <ExpressiveFlower className="contact-flower" />
           <p className="eyebrow">04 / GET IN TOUCH</p>
           <h2>
             Have a project in mind?

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface HoverCardProps {
   src: string;
   alt: string;
@@ -35,7 +37,7 @@ export default function HoverCard({
     <div
       className={`lang-card group relative m-2.5 flex flex-col items-center text-center max-[480px]:m-0 ${className ?? ""}`}
     >
-      <img
+      <Image
         src={src}
         alt={alt}
         width={size}
